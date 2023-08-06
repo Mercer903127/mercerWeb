@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using mercer_web.Entity;
+using Microsoft.AspNetCore.Mvc;
 
 namespace mercer_web.Controllers
 {

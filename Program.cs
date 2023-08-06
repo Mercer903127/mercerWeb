@@ -1,8 +1,15 @@
+using mercer_web.Core;
+using Microsoft.AspNetCore.Mvc;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
 builder.Services.AddControllersWithViews();
+builder.Services.Configure<MvcOptions>(o =>
+{
+    o.Filters.Add<CoreActionFilter>();
+});
 
 var app = builder.Build();
 
